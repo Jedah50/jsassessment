@@ -59,7 +59,7 @@ for (let i = 0; i < 10; i+=3) {console.log(i);}
 let decimals = [1.1, 1.6, 2.8, 0.4, 3.5, 1.6];
 
 
-
+// ARRAYS ITERATION EXERCISES
 
 
 let people = ["Greg", "Mary", "Devon", "James"];
@@ -96,3 +96,69 @@ console.log(peoples)
 
 let withbob = people.concat("Bob");
 
+
+
+
+
+
+
+
+
+// OBJECTS EXERCISES
+
+
+let namesAndHobbies = {
+    elie: "JavaScript",
+    matt: "jogging",
+    janey: "table building",
+    tim: "sailing"
+}
+
+console.log(namesAndHobbies.elie);
+
+for(let key in namesAndHobbies){
+    console.log(`${namesAndHobbies[key]} => ${key}`)
+}
+
+
+
+let programming = {
+    languages: ["JavaScript", "Python", "Ruby"],
+    isChallenging: true,
+    isRewarding: true,
+    difficulty: 8,
+    jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke"
+};
+
+
+
+
+// number 1
+programming.languages.push("Go");
+console.log(programming.languages)
+
+// number 2
+programming.difficulty = 7  
+console.log(programming)
+
+// number 3
+delete programming.jokes;
+console.log(programming)
+
+// number 4
+programming.isFun = true
+console.log(programming)
+
+// number 5
+for (let i = 0; i < programming.languages.length; i++) {
+    console.log(programming.languages[i]);}
+
+// number 6
+for (let key in programming) {
+    console.log(key);
+}
+
+// number 7
+for (let key in programming) {
+    console.log(programming[key]);
+}
